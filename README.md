@@ -11,7 +11,7 @@ Feld «Eigener Wert» wird auf die Unterseiten vererbt und wird über das Modul 
 - Template anpassen
 - Modul über Themes -> Layout oder per Inserttag platzieren
 
-![alt text](https://github.com/delirius/pageinherit/blob/main/screen.jpg?raw=true)
+![alt text](https://github.com/delirius/contao-pagefieldinherit/blob/main/screen.jpg?raw=true)
 
 ### Was die Erweiterung nicht macht
 Das Feld CSS-Klasse wird in der Navigation **nicht** ergänzt.
