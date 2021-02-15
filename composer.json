@@ -1,7 +1,7 @@
 {
     "name": "delirius/contao-pagefieldinherit",
     "keywords":["contao", "page", "feld", "css", "vererbung", "unterseiten", "field", "inherit", "subpages"],
-    "description": "Die Erweiterung ergänzt die Seite (tl_page) mit 2 Felder die auf die Unterseiten vererbt werden. Feld «CSS-Klasse» wird auf die Unterseiten vererbt und automatisch im <body> als Klasse hinzugefügt. Feld «Eigener Wert» wird auf die Unterseiten vererbt und wird mit dem Module «Seitenfeld mit Vererbung» hinzugefügt. So kann beispielsweise pro Stamm ein eigenes .css geladen werden.",
+    "description": "Die Erweiterung ergänzt die Seite (tl_page) mit 2 Felder die auf die Unterseiten vererbt werden. Feld «CSS-Klasse» wird auf die Unterseiten vererbt und automatisch im <body> als Klasse hinzugefügt. Feld «Eigener Wert» wird auf die Unterseiten vererbt und wird über das Modul «Seitenfeld mit Vererbung» hinzugefügt. So kann beispielsweise pro Seiten-Stamm ein zusätzliches .css geladen werden.",
     "type": "contao-bundle",
     "license": "LGPL-3.0-or-later",
     "require": {
