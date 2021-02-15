@@ -1,0 +1,3 @@
+<?php if ($this->inheritvalue): ?>
+    <?= $this->inheritvalue; ?>
+<?php endif; ?>
