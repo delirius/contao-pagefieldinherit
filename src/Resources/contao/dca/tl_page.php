@@ -2,7 +2,7 @@
 
 // contao/dca/tl_example.php
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
-use Contao\Config;
+
 
 // PaletteManipulator::create()
 //     // add a new "custom_legend" before the "date_legend"
@@ -36,6 +36,11 @@ foreach ($GLOBALS['TL_DCA']['tl_page']['palettes'] as $name => $palette) {
 
 // Hinzufügen der Feld-Konfiguration
 //
+//$GLOBALS['TL_DCA']['tl_page']['fields']['alias']['save_callback'] = array( array('tl_page_ext', 'generateAlias') );
+
+$GLOBALS['TL_DCA']['tl_page']['config']['onload_callback'][] = array('tl_page_extend', 'getPlaceholder');
+
+
 $GLOBALS['TL_DCA']['tl_page']['fields']['pageinheritcssclass'] = array
 (
     'label' => &$GLOBALS['TL_LANG']['tl_page']['pageinheritcssclass'],
@@ -47,7 +52,7 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['pageinheritcssclass'] = array
     'eval' => array(
         'tl_class' => 'w50',
         'maxlength' => 255,
-        'placeholder' => tl_page_ext::getPlaceholder('pageinheritcssclass')
+        'placeholder' => &$GLOBALS['TL_LANG']['tl_page']['pageinheritcssclass_value']
     ),
     'sql' => "varchar(255) NOT NULL default ''"
 );
@@ -63,23 +68,24 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['pageinheritvalue'] = array
     'eval' => array(
     'tl_class' => 'clr w50',
         'maxlength' => 255,
-        'placeholder' => tl_page_ext::getPlaceholder('pageinheritvalue')
+        'placeholder' => &$GLOBALS['TL_LANG']['tl_page']['pageinheritvalue_value']
     ),
     'sql' => "varchar(255) NOT NULL default ''"
 );
 
 
-class tl_page_ext extends \Backend {
+class tl_page_extend extends Backend {
 
-    public function getPlaceholder($field) {
-        $str = '';
-        $pageid= \Input::get('id');
+    public function getPlaceholder(DataContainer $dc) {
 
-        if (NULL != $pageid && NULL != $field )
+    //$pageid= \Input::get('id');
+    $pageid= $dc->id;
+
+        if (NULL != $pageid )
         {
-            $str = tl_page_ext::getInheritValue($pageid, $field);
+            $GLOBALS['TL_LANG']['tl_page']['pageinheritcssclass_value'] = tl_page_extend::getInheritValue($pageid, 'pageinheritcssclass');
+            $GLOBALS['TL_LANG']['tl_page']['pageinheritvalue_value'] = tl_page_extend::getInheritValue($pageid, 'pageinheritvalue');
         }
-        return $str;
 
     }
 
