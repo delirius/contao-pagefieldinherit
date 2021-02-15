@@ -69,7 +69,7 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['pageinheritvalue'] = array
 );
 
 
-class tl_page_ext extends Backend {
+class tl_page_ext extends \Backend {
 
     public function getPlaceholder($field) {
         $str = '';
