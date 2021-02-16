@@ -3,7 +3,7 @@
 Die Erweiterung ergänzt die Seite (tl_page) mit 2 Felder die auf die Unterseiten vererbt werden.
 
 ### CSS-Klasse mit Vererbung
-Feld «CSS-Klasse» wird auf die Unterseiten vererbt und automatisch im <body> als Klasse hinzugefügt. Es ist keine Konfiguration mehr nötig.
+Feld «CSS-Klasse» wird auf die Unterseiten vererbt und automatisch im `<body>` als Klasse hinzugefügt. Es ist keine weitere Konfiguration nötig.
 
 ### Eigener Wert mit Vererbung
 Feld «Eigener Wert» wird auf die Unterseiten vererbt und wird über das Modul «Seitenfeld mit Vererbung» hinzugefügt. So kann beispielsweise pro Seiten-Stamm ein zusätzliches .css geladen werden.
