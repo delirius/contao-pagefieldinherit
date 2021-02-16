@@ -1,12 +1,12 @@
 # Seitenfelder mit Vererbung
 
-Die Erweiterung ergänzt die Seite (tl_page) mit 2 Felder die auf die Unterseiten vererbt werden.
+Die Erweiterung ergänzt die Einstellungen der Seite (tl_page) mit 2 Feldern, die auf die Unterseiten vererbt werden.
 
 ### CSS-Klasse mit Vererbung
 Feld «CSS-Klasse» wird auf die Unterseiten vererbt und automatisch im `<body>` als Klasse hinzugefügt. Es ist keine weitere Konfiguration nötig.
 
 ### Eigener Wert mit Vererbung
-Feld «Eigener Wert» wird auf die Unterseiten vererbt und wird über das Modul «Seitenfeld mit Vererbung» hinzugefügt. So kann beispielsweise pro Seiten-Stamm ein zusätzliches .css geladen werden.
+Feld «Eigener Wert» wird auf die Unterseiten vererbt und über das Modul «Seitenfeld mit Vererbung» hinzugefügt. So kann beispielsweise pro Seiten-Stamm eine zusätzliche CSS-Datei geladen werden.
 - Modul «Seitenfeld mit Vererbung» erstellen
 - Template anpassen
 - Modul über Themes -> Layout oder per Inserttag platzieren
