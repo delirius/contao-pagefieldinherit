@@ -1,6 +1,6 @@
 # Seitenfelder mit Vererbung
 
-Zusätzliche Felder «CSS-Klasse mit Vererbung» und «Eigener Wert mit Vererbung» in der Seitenstruktur. Die Erweiterung ergänzt zwei zusätzliche Felder in der Seitenstruktur und im Seiten-Stamm (Startpunkt einer Webseite) die auf die Unterseiten vererbt werden. Im Backend wird der jeweils vererbte Wert als grauer Platzhalter angezeigt.
+Die Erweiterung ergänzt zwei zusätzliche Felder in der Seitenstruktur und im Seiten-Stamm (Startpunkt einer Webseite) die auf die Unterseiten vererbt werden. Im Backend wird der jeweils vererbte Wert als grauer Platzhalter angezeigt.
 
 ### CSS-Klasse mit Vererbung
 Feld «CSS-Klasse» wird auf die Unterseiten vererbt und automatisch im `<body>` als Klasse hinzugefügt. Es ist keine weitere Konfiguration nötig.
