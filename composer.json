@@ -1,6 +1,6 @@
 {
     "name": "delirius/contao-pagefieldinherit",
-    "keywords":["contao", "page", "feld", "css", "vererbung", "unterseiten", "field", "inherit", "subpages"],
+    "keywords":["contao", "pages", "css", "class", "klasse", "stylesheet", "vererbung", "seiten", "unterseiten", "inherit", "subpages"],
     "description": "Zusätzliche Felder «CSS-Klasse mit Vererbung» und «Eigener Wert mit Vererbung» in der Seitenstruktur und im Seiten-Stamm (Startpunkt einer Webseite).",
     "type": "contao-bundle",
     "license": "LGPL-3.0-or-later",
