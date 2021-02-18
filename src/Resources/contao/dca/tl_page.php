@@ -45,9 +45,9 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['pageinheritcssclass'] = array
 (
     'label' => &$GLOBALS['TL_LANG']['tl_page']['pageinheritcssclass'],
     'exclude' => true,
-    'filter' => true,
-    'sorting' => true,
-    'search' => false,
+    //'filter' => false,
+    //'sorting' => false,
+    'search' => true,
     'inputType' => 'text',
     'eval' => array(
         'tl_class' => 'w50',
@@ -61,9 +61,9 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['pageinheritvalue'] = array
 (
 'label' => &$GLOBALS['TL_LANG']['tl_page']['pageinheritvalue'],
 'exclude' => true,
-    'filter' => true,
-    'sorting' => true,
-    'search' => false,
+    //'filter' => false,
+    //'sorting' => false,
+    'search' => true,
     'inputType' => 'textarea',
     'eval' => array(
     'tl_class' => 'clr w50',
