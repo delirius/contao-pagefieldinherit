@@ -6,7 +6,7 @@ Die Erweiterung ergänzt zwei zusätzliche Felder in der Seitenstruktur und im S
 Feld «CSS-Klasse» wird auf die Unterseiten vererbt und automatisch im `<body>` als Klasse hinzugefügt. Es ist keine weitere Konfiguration nötig.
 
 ### Eigener Wert mit Vererbung
-Feld «Eigener Wert» wird auf die Unterseiten vererbt und über das Modul «Seitenfeld mit Vererbung» hinzugefügt. So kann beispielsweise pro Seiten-Stamm eine zusätzliche CSS-Datei geladen werden oder ein Slogan ausgegeben werden.
+Feld «Eigener Wert» wird auf die Unterseiten vererbt und über das Modul «Seitenfeld mit Vererbung» hinzugefügt. So kann beispielsweise pro Seiten-Stamm eine zusätzliche CSS-Datei geladen werden oder ein Slogan ausgegeben werden. Das Feld erlaubt die Eingabe von HTML-Tags und Zeilenumbrüche.
 - Modul «Seitenfeld mit Vererbung» erstellen
 - Template anpassen
 - Modul über Themes -> Layout oder per Inserttag platzieren
