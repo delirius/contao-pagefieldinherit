@@ -1,6 +1,6 @@
 # Seitenfelder mit Vererbung
 
-Die Erweiterung ergänzt die Einstellungen der Seite (tl_page) mit 2 Feldern, die auf die Unterseiten vererbt werden.
+Die Erweiterung ergänzt zwei zusätzliche Felder in der Seitenstruktur und im Seiten-Stamm (Startpunkt einer Webseite) die auf die Unterseiten vererbt werden. Im Backend wird der jeweils vererbte Wert als grauer Platzhalter angezeigt.
 
 ### CSS-Klasse mit Vererbung
 Feld «CSS-Klasse» wird auf die Unterseiten vererbt und automatisch im `<body>` als Klasse hinzugefügt. Es ist keine weitere Konfiguration nötig.
