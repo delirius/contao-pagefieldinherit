@@ -5,7 +5,7 @@ use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
-use Delirius\PageFieldInherit\DeliriusPageFieldInherit;
+use Delirius\PageFieldInherit\DeliriusPageFieldInheritBundle;
 
 class Plugin implements BundlePluginInterface
 {
@@ -15,8 +15,8 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(DeliriusPageFieldInherit::class)
-            ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
+            BundleConfig::create(DeliriusPageFieldInheritBundle::class)
+            				->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
                ];
     }
 }
