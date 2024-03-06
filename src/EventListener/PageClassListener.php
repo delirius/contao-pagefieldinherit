@@ -1,22 +1,24 @@
 <?php
 declare(strict_types=1);
 
-
-
 namespace Delirius\PageFieldInherit\EventListener;
 
+use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Contao\LayoutModel;
 use Contao\PageModel;
+use Contao\PageRegular;
 
+#[AsHook('generatePage')]
 class PageClassListener
 {
     /**
     * Prepends the css class of the root page.
     *
-    * @param PageModel   $objPage
-    * @param LayoutModel $objLayout
+    * @param PageModel   $pageModel
+    * @param LayoutModel $layoutModel
+    * @param PageRegular $pageRegular
     */
-    public function onGeneratePage(PageModel $pageModel, LayoutModel $layoutModel): void
+    public function __invoke(PageModel $pageModel, LayoutModel $layoutModel, PageRegular $pageRegular): void
     {
         $strValue = '';
 

@@ -1,0 +1,8 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+    Delirius\PageFieldInherit\EventListener\:
+        resource: ../src/EventListener
+        public: true

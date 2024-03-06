@@ -6,13 +6,11 @@
 $GLOBALS['TL_DCA']['tl_module']['palettes']['page_inherit_module'] = '{title_legend},name,type;{template_legend},pageinherit_template;';
 
 
-
 /**
  * Add fields to tl_module
  */
 $GLOBALS['TL_DCA']['tl_module']['fields']['pageinherit_template'] = array
 (
-'label' => &$GLOBALS['TL_LANG']['tl_module']['pageinherit_template'],
  'default' => 'pageinherit_default',
  'exclude' => true,
  'inputType' => 'select',
@@ -22,8 +20,9 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['pageinherit_template'] = array
 );
 
 
-
-
+use Contao\Backend;
+use Contao\Controller;
+use Contao\DataContainer;
 
 class tl_module_pageinherit extends Backend
 {
@@ -39,5 +38,3 @@ class tl_module_pageinherit extends Backend
     }
 
 }
-
-?>
