@@ -3,16 +3,40 @@
     "keywords":["contao", "pages", "css", "class", "klasse", "stylesheet", "vererbung", "seiten", "unterseiten", "inherit", "subpages"],
     "description": "Zusätzliche Felder «CSS-Klasse mit Vererbung» und «Eigener Wert mit Vererbung» in der Seitenstruktur und im Seiten-Stamm (Startpunkt einer Webseite).",
     "type": "contao-bundle",
-    "license": "LGPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Daniel Herren",
+            "email": "contao@delirius.ch",
+            "homepage": "https://delirius.ch",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/delirius/contao-pagefieldinherit/issues",
+        "source": "https://github.com/delirius/contao-pagefieldinherit"
+    },
     "require": {
-        "contao/core-bundle": "^4.4"
+        "php": "^8.1",
+        "contao/core-bundle": "^4.13 || ^5.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.12"
     },
     "autoload": {
         "psr-4": {
-            "Delirius\\PageFieldInherit\\": "src/"
+            "Delirius\\ContaoPagefieldinherit\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": false,
+            "contao/manager-plugin": false,
+            "contao-community-alliance/composer-plugin": true
         }
     },
     "extra": {
-         "contao-manager-plugin": "Delirius\\PageFieldInherit\\ContaoManager\\Plugin"
-    }
+        "contao-manager-plugin": "Delirius\\ContaoPagefieldinherit\\ContaoManager\\Plugin"
+    },
+    "version": "dev-main"
 }

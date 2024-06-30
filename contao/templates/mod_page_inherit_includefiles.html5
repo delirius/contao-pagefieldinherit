@@ -1,10 +1,9 @@
 <?php if ($this->inheritvalue): ?>
-    <?php $path = 'files/mytheme/'; ?>
+    <?php $path = 'files/theme/'; ?>
     <?php if ( file_exists($path.$this->inheritvalue.'.css') ): ?>
-        <?php $GLOBALS['TL_CSS'][] = $path.$this->inheritvalue.'.css'; ?>
+        <?php $GLOBALS['TL_CSS'][] = $path.$this->inheritvalue.'.css|static'; ?>
     <?php endif; ?>
     <?php if ( file_exists($path.$this->inheritvalue.'.js') ): ?>
         <?php $GLOBALS['TL_JAVASCRIPT'][] = $path.$this->inheritvalue.'.js'; ?>
     <?php endif; ?>
 <?php endif; ?>
-<div>
