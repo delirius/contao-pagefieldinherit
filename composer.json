@@ -37,6 +37,5 @@
     },
     "extra": {
         "contao-manager-plugin": "Delirius\\ContaoPagefieldinherit\\ContaoManager\\Plugin"
-    },
-    "version": "dev-main"
+    }
 }
