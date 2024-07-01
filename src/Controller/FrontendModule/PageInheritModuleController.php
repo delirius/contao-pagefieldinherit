@@ -59,7 +59,7 @@ class PageInheritModuleController extends AbstractFrontendModuleController {
 			}
 		}
 
-		$template->inheritvalue = $arrInheritValues[0];
+		$template->inheritvalue = $arrInheritValues[0] ?? '';
 
 		return $template->getResponse();
 	}
